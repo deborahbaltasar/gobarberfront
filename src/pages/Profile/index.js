@@ -3,10 +3,13 @@ import { Form, Input } from '@rocketseat/unform';
 
 import { Container } from './styles';
 
+import AvatarInput from './AvatarInput';
+
 export default function Profile() {
   return (
     <Container>
       <Form>
+        <AvatarInput name="avatar_id" />
         <Input name="name" placeholder="Nome completo" />
         <Input name="name" type="email" placeholder="Seu endereço de email" />
       
